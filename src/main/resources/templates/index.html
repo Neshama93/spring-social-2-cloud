@@ -6,5 +6,8 @@
 </head>
 <body>
     <h1>Welcome</h1>
+    <div sec:authorize="isAuthenticated()">
+        <p sec:authentication="principal"></p>
+    </div>
 </body>
 </html>
